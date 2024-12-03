@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+   <!-- ---CHANGE--- -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-69RX31DGZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    // <!-- ---CHANGE--- -->
+    gtag('config', 'G-69RX31DGZW');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Prof. M. AMNAI - Research</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.svg" rel="icon">
+  <link href="assets/img/favicon.svg" rel="favicon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        // <!-- ---CHANGE--- -->
+        publicKey: "OTaL0MA-ZZC6yCXZi",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    // Function to show success or error message
+    function displayMessage(type) {
+      if (type === 'success') {
+        document.querySelector('.sent-message').style.display = 'block';
+        setTimeout(() => {
+          document.querySelector('.sent-message').style.display = 'none';
+        }, 5000); // Message disappears after 5 seconds
+      } else if (type === 'error') {
+        document.querySelector('.error-message').style.display = 'block';
+        setTimeout(() => {
+          document.querySelector('.error-message').style.display = 'none';
+        }, 5000); // Message disappears after 5 seconds
+      }
+    }
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_3g9q9z4', 'template_gzcmrgq', '#contact-form').then(
+          (response) => {
+            console.log('SUCCESS!');
+            displayMessage('success'); // Show success message
+          },
+          (error) => {
+            console.log('FAILED...', error);
+            displayMessage('error'); // Show error message
+          }
+        );
+      });
+    }
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            // <!-- ---CHANGE--- -->
+      })(window, document, 'script', 'dataLayer', 'GTM-T7BVKB93');</script>
+  <!-- End Google Tag Manager -->
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7BVKB93" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li class="sec"><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li class="sec"><a href="resume.html"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li class="sec"><a href="research.html" class="active"><i
+              class="bi bi-mortarboard navicon"></i><span>Research</span></a></li>
+      </ul>
+      <ul>
+        <li><a href="#journal" class="active"><i class="bi bi-journal navicon"></i><span>Journals</span></a>
+        </li>
+        <li><a href="#chapter"><i class="bi bi-file-earmark-text navicon"></i><span>Chapters</span></a></li>
+        <li><a href="#conference"><i class="bi bi-people navicon"></i><span>Conf.</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- journal Section -->
+    <section id="journal" class="journal section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Journal Articles</h2>
+        <ul class="contributions journal">
+          <!-- High-Impact Articles -->
+          <li><strong>High-Impact Articles (Q1 & Q2):</strong></li>
+          <ul>
+            <li>Elbaghazaoui, B.E., et al. "Precision Profiling of Fake News in Social Media Using Advanced Machine Learning." <i>IAES International Journal of Artificial Intelligence (IJ-AI)</i>, 2024. SJR: 0.37.</li>
+            <li>Moudden, T.E., et al. "Artificial intelligence for assessing the planets' positions as a precursor to earthquake events." <i>Journal of Geodynamics</i>, 2024. Q1, SJR: 0.75. DOI: <a href="https://doi.org/10.1016/j.jog.2024.102057" target="_blank">10.1016/j.jog.2024.102057</a>.</li>
+            <li>Hebabaze, S.E., et al. "From Micro-benchmarks to Machine Learning: Unveiling the Efficiency and Scalability of Hadoop and Spark." <i>International Journal of Interactive Mobile Technologies</i>, 2024. SJR: 0.4. DOI: <a href="https://doi.org/10.3991/ijim.v18i17.44555" target="_blank">10.3991/ijim.v18i17.44555</a>.</li>
+            <li>Mhammedi, S., et al. "A highly scalable CF recommendation system using ontology and SVD-based incremental approach." <i>Bulletin of Electrical Engineering and Informatics</i>, 2023. DOI: <a href="https://doi.org/10.11591/eei.v12i6.6261" target="_blank">10.11591/eei.v12i6.6261</a>.</li>
+            <li>Elbaghazaoui, B.E., et al. "Predicting user behavior using data profiling and hidden Markov model." <i>International Journal of Electrical and Computer Engineering</i>, 2023. DOI: <a href="https://doi.org/10.11591/ijece.v13i5.pp5444-5453" target="_blank">10.11591/ijece.v13i5.pp5444-5453</a>.</li>
+            <li>Elbaghazaoui, B.E., et al. "Predicting the next word using the Markov chain model according to profiling personality." <i>Journal of Supercomputing</i>, 2023. SJR: 0.76. DOI: <a href="https://doi.org/10.1007/s11227-023-05125-2" target="_blank">10.1007/s11227-023-05125-2</a>.</li>
+          </ul>
+          
+          <!-- Medium-Impact Articles -->
+          <li><strong>Medium-Impact Articles (Q3 & Q4):</strong></li>
+          <ul>
+            <li>Moudden, T.E., et al. "New unfreezing strategy of transfer learning in satellite imagery for mapping the diversity of slum areas: A case study in Kenitra city—Morocco." <i>Scientific African</i>, 2024. SJR: 0.58. DOI: <a href="https://doi.org/10.1016/j.sciaf.2024.e02135" target="_blank">10.1016/j.sciaf.2024.e02135</a>.</li>
+            <li>Maftah, S., et al. "Intelligent task processing using mobile edge computing: processing time optimization." <i>IAES International Journal of Artificial Intelligence</i>, 2024. DOI: <a href="https://doi.org/10.11591/ijai.v13.i1.pp143-152" target="_blank">10.11591/ijai.v13.i1.pp143-152</a>.</li>
+            <li>Moudden, T.E., Amnai, M. "Building an efficient convolution neural network from scratch: A case study on detecting and localizing slums." <i>Scientific African</i>, 2023. SJR: 0.58. DOI: <a href="https://doi.org/10.1016/j.sciaf.2023.e01612" target="_blank">10.1016/j.sciaf.2023.e01612</a>.</li>
+            <li>El Moudden, T., et al. "Slum image detection and localization using transfer learning: a case study in Northern Morocco." <i>International Journal of Electrical and Computer Engineering</i>, 2023. SJR: 0.32. DOI: <a href="https://doi.org/10.11591/ijece.v13i3.pp3299-3310" target="_blank">10.11591/ijece.v13i3.pp3299-3310</a>.</li>
+            <li>Mhammedi, S., et al. "Enhancing Recommendation System using Ontology-based Similarity and Incremental SVD Prediction." <i>Recent Advances in Computer Science and Communications</i>, 2023. SJR: 0.2. DOI: <a href="https://doi.org/10.2174/2666255816666230823125227" target="_blank">10.2174/2666255816666230823125227</a>.</li>
+          </ul>
+    
+          <!-- Other Notable Contributions -->
+          <li><strong>Other Contributions:</strong></li>
+          <ul>
+            <li>Sabouri, Z., et al. "Prediction of Depression via Supervised Learning Models: Performance Comparison and Analysis." <i>International Journal of Online and Biomedical Engineering</i>, 2023. SJR: 0.39. DOI: <a href="https://doi.org/10.3991/ijoe.v19i09.39823" target="_blank">10.3991/ijoe.v19i09.39823</a>.</li>
+            <li>Abassi, M.E., et al. "Matching data detection for the integration system." <i>International Journal of Electrical and Computer Engineering</i>, 2023. SJR: 0.32. DOI: <a href="https://doi.org/10.11591/ijece.v13i1.pp1008-1014" target="_blank">10.11591/ijece.v13i1.pp1008-1014</a>.</li>
+            <li>El Bouabidi, H., et al. "Applying Logarithm and Russian Multiplication Protocols to Improve Paillier’s Cryptosystem." <i>International Journal of Advanced Computer Science and Applications</i>, 2022. SJR: 0.28. DOI: <a href="https://doi.org/10.14569/IJACSA.2022.0131192" target="_blank">10.14569/IJACSA.2022.0131192</a>.</li>
+            <li>Maftah, S., et al. "Optimal Task Processing and Energy Consumption Using Intelligent Offloading in Mobile Edge Computing." <i>International Journal of Interactive Mobile Technologies</i>, 2022. SJR: 0.4. DOI: <a href="https://doi.org/10.3991/ijim.v16i20.34373" target="_blank">10.3991/ijim.v16i20.34373</a>.</li>
+            <li>Elbaghazaoui, B.E., et al. "Data Profiling and Machine Learning to Identify Influencers from Social Media Platforms." <i>Journal of ICT Standardization</i>, 2022. SJR: 0.37. DOI: <a href="https://doi.org/10.13052/jicts2245-800X.1026" target="_blank">10.13052/jicts2245-800X.1026</a>.</li>
+            <li>Hanin, M.H., et al. "New adaptation method based on cross layer and TCP over protocols to improve QoS in mobile ad hoc network." <i>International Journal of Electrical and Computer Engineering</i>, 2021. SJR: 0.32. DOI: <a href="https://doi.org/10.11591/ijece.v11i3.pp2134-2142" target="_blank">10.11591/ijece.v11i3.pp2134-2142</a>.</li>
+            <li>Hamzaoui, Y., et al. "Enhancing OLSR routing protocol using K-means clustering in MANETs." <i>International Journal of Electrical and Computer Engineering</i>, 2020. SJR: 0.32. DOI: <a href="https://doi.org/10.11591/ijece.v10i4.pp3715-3724" target="_blank">10.11591/ijece.v10i4.pp3715-3724</a>.</li>
+            <li>Choukri, A., et al. "Classification algorithm based on nodes similarity for MANETs." <i>International Journal of Online and Biomedical Engineering</i>, 2019. SJR: 0.39. DOI: <a href="https://doi.org/10.3991/ijoe.v15i05.9742" target="_blank">10.3991/ijoe.v15i05.9742</a>.</li>
+            <li>Hamzaoui, Y., et al. "Enhancing OLSR routing protocol using K-medoids clustering method in MANETs." <i>International Journal of Applied Engineering Research</i>, 2017. SJR: 0. ISSN: 09734562.</li>
+            <li>Hicham, H.M., et al. "Enhanced multi-point relay selection based on fuzzy logic." <i>International Review on Computers and Software</i>, 2016. ISSN: 18286003. DOI: <a href="https://doi.org/10.15866/irecos.v11i6.9064" target="_blank">10.15866/irecos.v11i6.9064</a>.</li>
+            <li>Amnai, M., et al. "Adaptive fuzzy mobility for delay and throughput sensitive traffic in Ad Hoc networks." <i>International Review on Computers and Software</i>, 2012. ISSN: 18286003.</li>
+            <li>Choukri, A., et al. "AODV protocol behavior based on H.264 multiservice traffic." <i>International Review on Computers and Software</i>, 2012. ISSN: 18286003.</li>
+            <li>Fakhri, Y., et al. "Traffic multiservice based performance analysis of OLSR and AODV protocols for mobile ad hoc networks." <i>International Journal of Advancements in Computing Technology</i>, 2011. ISSN: 20058039. DOI: <a href="https://doi.org/10.4156/ijact.vol3.issue8.36" target="_blank">10.4156/ijact.vol3.issue8.36</a>.</li>
+
+          </ul>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- /journal Section -->
+    
+    
+
+    <!-- chapter Section -->
+    <section id="chapter" class="chapter section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Book Chapters</h2>
+        <ul class="contributions chapter">
+          <li>
+            Elbaghazaoui, B.E., Amnai, M., Fakhri, Y. "Influencer Profiling to Identify the Top Keywords Using LDA." 
+            <i>Lecture Notes on Data Engineering and Communications Technologies</i>, 2023, 141, pp. 377-388. 
+            DOI: <a href="https://doi.org/10.1007/978-981-19-3035-5_29" target="_blank">10.1007/978-981-19-3035-5_29</a>, 
+            ISSN: 23674512.
+          </li>
+          <li>
+            Elbaghazaoui, B.E., Amnai, M., Fakhri, Y. "User Profiling and Influence Maximization." 
+            <i>Lecture Notes on Data Engineering and Communications Technologies</i>, 2022, 126, pp. 221-232. 
+            DOI: <a href="https://doi.org/10.1007/978-981-19-2069-1_16" target="_blank">10.1007/978-981-19-2069-1_16</a>, 
+            ISSN: 23674512.
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- /chapter Section -->
+
+
+    <!-- conference Section -->
+    <section id="conference" class="conference section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Conference Contributions</h2>
+        <ul class="contributions conference">
+    
+          <!-- 2024 Conferences -->
+          <li><strong>2024:</strong></li>
+          <ul>
+            <li>Zahrae, S.F., Ali, C., Mohamed, A. "Record Linkage Approaches in Big Data: A Comprehensive Review." <i>International Conference on Intelligent Systems and Computer Vision, ISCV 2024</i> (2024). DOI: <a href="https://doi.org/10.1109/ISCV60512.2024.10620076" target="_blank">10.1109/ISCV60512.2024.10620076</a>.</li>
+
+            <li>Elbaghazaoui, B.E., et al. "Event Profiling in Social Media: A Survey with an Application." <i>4th International Conference on Innovative Research in Applied Science, Engineering and Technology, IRASET 2024</i> (2024). DOI: <a href="https://doi.org/10.1109/IRASET60544.2024.10548943" target="_blank">10.1109/IRASET60544.2024.10548943</a>.</li>
+            
+            <li>Mhammedi, S., et al. "Enhancing Book Recommendations on GoodReads: A Data Mining Approach Based Random Forest Classification." <i>Lecture Notes in Networks and Systems</i> (2024) 938 LNNS, pp. 395-409. DOI: <a href="https://doi.org/10.1007/978-3-031-54376-0_36" target="_blank">10.1007/978-3-031-54376-0_36</a>.</li>
+            
+            <li>Ridani, M., Amnai, M. "Query Optimization Using Indexation Techniques in Datawarehouse: Survey and Use Cases." <i>Lecture Notes in Networks and Systems</i> (2024) 837 LNNS, pp. 406-412. DOI: <a href="https://doi.org/10.1007/978-3-031-48465-0_53" target="_blank">10.1007/978-3-031-48465-0_53</a>.</li>
+            
+            <li>Maftah, S., Ghmary, M.E., Amnai, M. "Virtual Machine Selection in Mobile Edge Computing: Computing Resources Efficiency." <i>Lecture Notes in Networks and Systems</i> (2024) 837 LNNS, pp. 413-419. DOI: <a href="https://doi.org/10.1007/978-3-031-48465-0_54" target="_blank">10.1007/978-3-031-48465-0_54</a>.</li>
+            
+            <li>Imane, B., Mohamed, A. "Grape and Apple Plant Diseases Detection Using Enhance DenseNet121 Based Convolutional Neural Network." <i>Lecture Notes in Networks and Systems</i> (2024) 826, pp. 213-226. DOI: <a href="https://doi.org/10.1007/978-3-031-47672-3_22" target="_blank">10.1007/978-3-031-47672-3_22</a>.</li>
+            
+            <li>Sabouri, Z., Gherabi, N., Amnai, M. "Comparative Study of Supervised Regression Algorithms in Machine Learning." <i>Lecture Notes in Networks and Systems</i> (2024) 826, pp. 365-373. DOI: <a href="https://doi.org/10.1007/978-3-031-47672-3_35" target="_blank">10.1007/978-3-031-47672-3_35</a>.</li>
+            
+          </ul>
+    
+          <!-- 2023 Conferences -->
+          <li><strong>2023:</strong></li>
+          <ul>
+            <li>Tahiri, S., Choukhairi, M., Fakhri, Y., Amnai, M. "Enhancing QoS in IoT through Big Data-Driven Networking and Computing Technologies." <i>EEE International Conference on Technology Management, Operations and Decisions, ICTMOD 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/ICTMOD59086.2023.10438165" target="_blank">10.1109/ICTMOD59086.2023.10438165</a>.</li>
+            <li>Hamzaoui, Y., Chekour, M., Amnai, M. "Enhanced MPR Selection Algorithm Based on Metrics for the OLSR Routing Protocol." <i>Proceedings - 6th International Conference on Advanced Communication Technologies and Networking, CommNet 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/CommNet60167.2023.10365281" target="_blank">10.1109/CommNet60167.2023.10365281</a>.</li>
+            <li>Briouya, A., Briouya, H., Choukri, A., Amnai, M., Fakhri, Y. "Exploration of Question-Answering Systems: Survey." <i>Proceedings - 10th International Conference on Wireless Networks and Mobile Communications, WINCOM 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/WINCOM59760.2023.10322930" target="_blank">10.1109/WINCOM59760.2023.10322930</a>.</li>
+            <li>Choukhairi, M., M'Haouach, M., Fakhri, Y., Amnai, M. "Tree-Driven Intelligent Security System for Intrusion Detection in IoT Environment." <i>Proceedings - 10th International Conference on Wireless Networks and Mobile Communications, WINCOM 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/WINCOM59760.2023.10322954" target="_blank">10.1109/WINCOM59760.2023.10322954</a>.</li>
+            <li>Ridani, M., Amnai, M., Choukri, A., Fakhri, Y., Gherabi, N. "Indexation Techniques in Decision Support Systems: Study and Evaluation." <i>Proceedings - 10th International Conference on Wireless Networks and Mobile Communications, WINCOM 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/WINCOM59760.2023.10322993" target="_blank">10.1109/WINCOM59760.2023.10322993</a>.</li>
+            <li>Ayoub, O., Youssef, F., Boulaknadel, S., Mohamed, A. "Automatic Classification of Emails Using Deep Learning." <i>Proceedings - 10th International Conference on Wireless Networks and Mobile Communications, WINCOM 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/WINCOM59760.2023.10322909" target="_blank">10.1109/WINCOM59760.2023.10322909</a>.</li>
+            <li>Elbaghazaoui, B.E., et al. "Profiling Language Sign Using Deep Learning." <i>Proceedings - 10th International Conference on Wireless Networks and Mobile Communications, WINCOM 2023</i> (2023). DOI: <a href="https://doi.org/10.1109/WINCOM59760.2023.10323023" target="_blank">10.1109/WINCOM59760.2023.10323023</a>.</li>
+            <li>Maftah, S., EL Ghmary, M., El Bouabidi, H., Amnai, M., Ouacha, A. "Optimal Resource Allocation in Mobile Edge Computing Based on Virtual Machine Migration." <i>Lecture Notes in Networks and Systems</i> (2023) 625 LNNS, pp. 575-585. DOI: <a href="https://doi.org/10.1007/978-3-031-28387-1_48" target="_blank">10.1007/978-3-031-28387-1_48</a>.</li>
+            <li>El Bouabidi, H., El Ghmary, M., Maftah, S., Amnai, M., Ouacha, A. "Using MPI to Compare Two Protocols That Allow Paillier's Cryptosystem to Perform Homomorphic Multiplication." <i>Lecture Notes in Networks and Systems</i> (2023) 635 LNNS, pp. 812-817. DOI: <a href="https://doi.org/10.1007/978-3-031-26254-8_118" target="_blank">10.1007/978-3-031-26254-8_118</a>.</li>
+            <li>Mhammedi, S., El Massari, H., Gherabi, N., Amnai, M. "CF Recommender System Based on Ontology and Nonnegative Matrix Factorization (NMF)." <i>Lecture Notes in Networks and Systems</i> (2023) 635 LNNS, pp. 313-318. DOI: <a href="https://doi.org/10.1007/978-3-031-26254-8_44" target="_blank">10.1007/978-3-031-26254-8_44</a>.</li>
+            <li>Sabouri, Z., Gherabi, N., El Massari, H., Mhammedi, S., Amnai, M. "A SWOT Analysis for Healthcare Using Machine Learning." <i>Lecture Notes in Networks and Systems</i> (2023) 635 LNNS, pp. 126-131. DOI: <a href="https://doi.org/10.1007/978-3-031-26254-8_19" target="_blank">10.1007/978-3-031-26254-8_19</a>.</li>
+          </ul>
+    
+          <!-- 2022 Conferences -->
+          <li><strong>2022:</strong></li>
+          <ul>
+            <li>Ridani, M., Amnai, M. "Optimization Challenge in Decision Supporting Systems: An Overview." <i>IEEE 3rd International Conference on Electronics, Control, Optimization and Computer Science, ICECOCS 2022</i> (2022). DOI: <a href="https://doi.org/10.1109/ICECOCS55148.2022.9982911" target="_blank">10.1109/ICECOCS55148.2022.9982911</a>.</li>
+            <li>Elbaghazaoui, B.E., et al. "Human Profiling Based on Computer Vision: A Survey with Application." <i>IEEE 3rd International Conference on Electronics, Control, Optimization and Computer Science, ICECOCS 2022</i> (2022). DOI: <a href="https://doi.org/10.1109/ICECOCS55148.2022.9983332" target="_blank">10.1109/ICECOCS55148.2022.9983332</a>.</li>          
+            <li>Izem, M., Amnai, M. "Blockchain Technology: A Bibliographic Study." <i>IEEE 3rd International Conference on Electronics, Control, Optimization and Computer Science, ICECOCS 2022</i> (2022). DOI: <a href="https://doi.org/10.1109/ICECOCS55148.2022.9983286" target="_blank">10.1109/ICECOCS55148.2022.9983286</a>.</li>            
+            <li>Merieme, E.A., et al. "A Survey on the Challenges of Data Integration." <i>Proceedings - 2022 9th International Conference on Wireless Networks and Mobile Communications, WINCOM 2022</i> (2022). DOI: <a href="https://doi.org/10.1109/WINCOM55661.2022.9966419" target="_blank">10.1109/WINCOM55661.2022.9966419</a>.</li>        
+            <li>Choukhairi, M., et al. "TTIDS: A Time-Driven Trust Based Intrusion Detection System for IoT Networks." <i>Proceedings - 2022 9th International Conference on Wireless Networks and Mobile Communications, WINCOM 2022</i> (2022). DOI: <a href="https://doi.org/10.1109/WINCOM55661.2022.9966466" target="_blank">10.1109/WINCOM55661.2022.9966466</a>.</li>         
+            <li>Mouad, B., Mohamed, A. "Detection and Prediction Using Similar Trajectory Measurements." <i>Lecture Notes in Networks and Systems</i> (2022) 357 LNNS, pp. 155-163. DOI: <a href="https://doi.org/10.1007/978-3-030-91738-8_15" target="_blank">10.1007/978-3-030-91738-8_15</a>.</li>            
+            <li>Elbaghazaoui, B.E., et al. "Optimized Influencers Profiling from Social Media Based on Machine Learning." <i>Lecture Notes in Networks and Systems</i> (2022) 357 LNNS, pp. 43-56. DOI: <a href="https://doi.org/10.1007/978-3-030-91738-8_5" target="_blank">10.1007/978-3-030-91738-8_5</a>.</li>            
+          </ul>
+    
+          <!-- Older Conferences -->
+          <li><strong>Older Conferences:</strong></li>
+          <ul>
+            <li>Hanin, M.H., Fakhri, Y., Amnai, M. "A New Efficient Technique to Enhance Quality of Service in OLSR Protocol." <i>Advances in Intelligent Systems and Computing (SJR 0)</i> (2023) 915, pp. 85-97. DOI: <a href="https://doi.org/10.1007/978-3-030-11928-7_7" target="_blank">10.1007/978-3-030-11928-7_7</a>.</li>
+            <li>Amnai, M., Fakhri, Y., Abouchabaka, J. "Evaluation of Impact of Traffic VBR and Mobility on the Performance of AODV Routing Protocols in Mobile Ad Hoc Networks." <i>International Conference on Multimedia Computing and Systems - Proceedings</i> (2011). Art. no. 5945720, DOI: <a href="https://doi.org/10.1109/ICMCS.2011.5945720" target="_blank">10.1109/ICMCS.2011.5945720</a>.</li>
+            <li>Amnai, M., Fakhri, Y., Abouchabaka, J. "Throughput-Delay Optimisation with Adaptive Method in Wireless Ad Hoc Network." <i>5th International Symposium on I/V Communications and Mobile Networks, ISIVC 2010</i> (2010). Art. no. 5656287, DOI: <a href="https://doi.org/10.1109/ISVC.2010.5656287" target="_blank">10.1109/ISVC.2010.5656287</a>.</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- /conference Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Kenitra, Morocco</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+212 6 66 53 60 01</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Me</h3>
+                <p>mohamed.amnai@uit.ac.ma</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message">An error has been occured. Send message directely!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Prof. Mohamed AMNAI</h3>
+      <p>I look forward to receiving your message and will get back to you as soon as possible. Feel free to reach out
+        for any inquiries or collaboration opportunities.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.researchgate.net/profile/Bahaa-Eddine-Elbaghazaoui" title="ResearchGate">
+          <i class="custom-icon researchgate-icon"></i>
+        </a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57218899003" title="Scopus">
+          <i class="custom-icon scopus-icon"></i>
+        </a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">M AMNAI</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
